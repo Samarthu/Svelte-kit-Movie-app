@@ -32,9 +32,13 @@
   
 </script>
 
+<button type="button" style="float:right" class=" mr-4 m-2 right-0 px-p15 text-sm text-white font-medium py-p10 rounded bg-blue-500 ml-3 ml-auto  bg-bg-blue-500 font-medium rounded text-yellow-50 text-sm px-5 py-2" on:click|preventDefault={()=> goto("movies")}>Back</button>
 <div>
+
+
     {#if  $user_watchlists.length }
-<main class="container mx-auto mt-8">
+    <div class="container mx-auto mt-12">
+    
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <!-- Sample movie card -->
       {#each $user_watchlists as movie }
@@ -61,7 +65,7 @@
 
       <!-- Add more movie cards here -->
     </div>
- </main>
+    </div>
  {:else}
          <div class="text-lg text-center mt-5 font-bold"> NO Movie Found In WatchList </div>
  {/if}

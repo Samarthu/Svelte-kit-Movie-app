@@ -170,7 +170,7 @@
  
 <main class="container mx-auto mt-8">
   <!-- Dynamic Filters  -->
-  <div class="flex items-center gap-2 mb-5">
+  <div class="flex items-center gap-2 mb-5 flex-wrap px-4">
      <h2 class="whitespace-nowrap "> Genre : </h2>
     {#each $display_genres as genre}
       <button
@@ -182,7 +182,7 @@
       </button>
     {/each}
   </div>
-  <div class="flex items-center gap-2 mb-5">
+  <div class="flex items-center gap-2 mb-5 px-4">
     <h2 class="whitespace-nowrap "> Years : </h2>
    {#each $display_years as year}
      <button
@@ -194,7 +194,7 @@
      </button>
    {/each}
  </div>
- <div class="flex items-center gap-2 mb-5">
+ <div class="flex items-center gap-2 mb-5 px-4">
   <h2 class="whitespace-nowrap "> Rating : </h2>
     {#each $display_ratings as rating}
       <button

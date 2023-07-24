@@ -70,13 +70,13 @@ const handleKey =async (e) => {
 <svelte:window on:keydown={(e)=>handleKey(e)}  />
 
 <nav class="bg-gray-800 text-white p-4">
-    <div class="container mx-auto flex items-center justify-between">
+    <div class="container mx-auto flex items-center justify-between  flex-wrap">
       <div class="flex items-center">
         <img src="/logo_film.jpeg" alt="Movie Listing App Logo" class="w-8 h-8 mr-2">
         <a href="#" class="text-2xl font-bold">Movie Listing App</a>
       </div>
       <div class="flex items-center">
-        <div class="flex gap-4 items-center">
+        <div class="flex gap-4 items-center flex-wrap mt-4">
        
         <div class="relative">
           <input
